@@ -5,7 +5,8 @@ build: clean
 	docker-compose build --no-cache
 run:
 	docker-compose up -d
-clean:
+stop:
 	docker-compose down
+clean: stop
 	- docker rmi $(CLIENT_IMAGE_NAME)
 	- docker rmi $(SERVER_IMAGE_NAME)
