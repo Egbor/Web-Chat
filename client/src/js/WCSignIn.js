@@ -29,7 +29,7 @@ function WCSignIn() {
                  <div className="wcauth-split-line"></div>
             </div>
             <div className="wcauth-alt-wrapper">
-                <a className="wcauth-alt-link" href="#">Sign up</a>
+                <a className="wcauth-alt-link" href="/account/create">Sign up</a>
             </div>
         </div>
     );

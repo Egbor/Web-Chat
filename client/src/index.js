@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { BrowserRouter } from 'react-router-dom';
+
 import App from './App';
-import WCSignIn from './js/WCSignIn';
 import reportWebVitals from './reportWebVitals';
 
+import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <WCSignIn/>
-  </React.StrictMode>,
+  <BrowserRouter>
+    <App/>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

@@ -12,12 +12,20 @@
 
 .wcauth-title-wrapper {
     display: flex;
+    flex-direction: column;
+    margin: 0 auto 50px auto;
 }
 
 .wcauth-title-text {
-    margin: 0 auto 50px auto;
     font-family: 'Spectral SC', serif;
     font-size: 40px;
+    text-align: center;
+}
+
+.wcauth-subtitle-text {
+    font-size: 17px;
+    text-align: center;
+    color: #8e8e8e;
 }
 
 .wcauth-split-wrapper {
