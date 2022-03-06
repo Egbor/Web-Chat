@@ -1,0 +1,11 @@
+{
+    "db": {
+        "webchat": {
+            "host": "mysql-db",
+            "user": "WebChatUser",
+            "password": "WebChatMySQl",
+            "database": "webchat",
+            "port": 3306
+        }
+    }
+}

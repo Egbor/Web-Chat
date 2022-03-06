@@ -1,4 +1,4 @@
-import { Switch, Navigate } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
 function WCHome() {
     return <Navigate to="/login" />
