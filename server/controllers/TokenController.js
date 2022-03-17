@@ -2,12 +2,9 @@ const { response } = require('express');
 const token = require('../models/Token');
 
 exports.getToken = function(request, response) {
-    //response.set({ "Access-Control-Allow-Origin": request.get("Host") });
-    response.send({ aaa: request.body });
-
-    // token.get(request.body.token, 
-    //     function(err, result) {
-    //         response.send(result);
-    //     }    
-    // );
+    token.get(request.body.token, 
+        function(err, result) {
+            response.send(JSON.stringify({ token: result[0].t_token, date: result[0].t_create_at}));
+        }    
+    );
 }

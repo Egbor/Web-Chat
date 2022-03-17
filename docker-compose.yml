@@ -31,6 +31,7 @@ services:
     ports:
       - 8000:8000
     volumes:
+      - ./server/index.js:/app/index.js
       - ./server/routes:/app/routes
       - ./server/models:/app/models
       - ./server/controllers:/app/controllers

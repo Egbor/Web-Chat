@@ -6,12 +6,13 @@ import WCFeed from './js/WCFeed';
 import WCSignIn from './js/WCSignIn';
 import WCSignUp from './js/WCSignUp';
 import WCSession from './js/WCSession';
+import WCProfile from './js/WCProfile';
 
 class App extends Component {
   render() {
     return (
       <Routes>
-          <Route path="/" element={<WCHome />} />
+          <Route path="/*" element={<WCHome />} />
           <Route path="/login" element={<WCSignIn />} />
           <Route path="/account/feed" element={<WCFeed />} />
           <Route path="/account/create" element={<WCSignUp />} />

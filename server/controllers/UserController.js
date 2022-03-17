@@ -12,12 +12,13 @@ exports.authorizeUser = function(request, response) {
                 response.redirect("http://localhost/login?error=" + btoa("Wrong login or password"));
             } else {
                 const id = result[0].u_id;
+                const login = result[0].u_login;
                 const date = new Date();
                 const hash = crypto.createHash("md5").update(result[0].u_login + result[0].u_password + date).digest("hex");
 
                 token.add(id, hash, date,
                     function (err, result) {
-                        response.redirect("http://localhost/account/session?token=" + btoa(hash));
+                        response.redirect("http://localhost/account/session?token=" + btoa(hash) + "&login=" + btoa(login));
                     }    
                 );
             }
