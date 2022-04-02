@@ -9,3 +9,47 @@
 .wc-title-font-family {
     font-family: 'Spectral SC', serif;
 }
+
+.wc-main-wrapper {
+    height: 100vh;
+}
+
+.wc-context-wrapper {
+    height: 80%;
+}
+
+.wc-room-item-image {
+    width: 40px;
+    height: 40px;
+}
+
+.wc-chat-view-wrapper {
+    height: 100%;
+    border: 1px solid #dbdbdb;
+    background-color: #FFFFFF;
+}
+
+.wc-chat-textarea {
+    height: 12px;
+    resize: none;
+}
+
+.wc-chat-send-button {
+    min-width: 100px;
+}
+
+.wc-chat-wrapper {
+    /* position: relative; */
+}
+
+.wc-chat-form-wrapper {
+    height: 100px;
+    border: 1px solid #dbdbdb;
+    background-color: #FFFFFF;
+    /* position: absolute;
+    bottom: 0; */
+}
+
+.wc-chat-form {
+    height: 100%;
+}
